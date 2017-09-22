@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        midpay("tester@gmail.com", "+919591953812", "shardul lavekar", "10000");
+        midpay("tester@gmail.com", "+919591953812", "shardul lavekar", "900");
     }
 
     private void midpay(String email, String phone, String name, String amount) {

@@ -17,7 +17,7 @@
         </activity>
 
         <meta-data android:name="merchant_url"
-            android:value="http://192.168.0.102/midtrans.php"
+            android:value="http://frozen-reef-67391.herokuapp.com/mid/checkout.php"
             />
 
         <meta-data android:name="MT_client_key"

@@ -17,8 +17,6 @@ import com.midtrans.sdk.uikit.SdkUIFlowBuilder;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.UUID;
-
 /**
  * Created by shardullavekar on 22/09/17.
  */
@@ -74,9 +72,7 @@ public class Pay {
                 .useBuiltInTokenStorage(true)  // set to false if you want to your own token storage (just for two click)
                 .buildSDK();
 
-        String txnId = UUID.randomUUID().toString();
-
-        TransactionRequest transactionRequest = new TransactionRequest(txnId, Double.valueOf(amount));
+        TransactionRequest transactionRequest = new TransactionRequest(System.currentTimeMillis() + "", Double.valueOf(amount));
 
         transactionRequest.setCustomerDetails(initCustomerDetails());
 
